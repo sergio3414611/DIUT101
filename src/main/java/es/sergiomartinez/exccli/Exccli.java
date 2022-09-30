@@ -5,6 +5,7 @@
 package es.sergiomartinez.exccli;
 
 import java.text.NumberFormat;
+import java.time.Clock;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.apache.commons.cli.CommandLine;
@@ -28,7 +29,7 @@ public class Exccli {
         options.addOption("w", "hello world", false, "Imprimir hola mundo");
 
         OptionGroup group = new OptionGroup();
-        group.addOption(new Option("n", "nice", false, "Imprime bonito"));
+        group.addOption(new Option("s", "subir", false, "Imprime bonito"));
         group.addOption(new Option("c", "cruel", false, "Imprime cruel"));
         options.addOptionGroup(group);
 
